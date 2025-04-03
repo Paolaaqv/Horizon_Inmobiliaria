@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bienes Raíces y Gestión</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Insertamos la libreria de Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!--inicio del header-->
+    <header>
+        <!--creación del menu de navegacion-->
+        <img src="./assets/images/Horizon.png" alt="logo" width="500" height="500" class="logo">
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="./views/galeria.html">Galería</a></li>
+                <li><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li><a href="./views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--fin del header-->
+    <!--inicio del main-->
+    <main class="inicio">
+        <section id="quienes-somos">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En <strong>Horizon Bienes raíces y Gestión</strong>, nos especializamos en hacer realidad los sueños de miles de personas que buscan su hogar ideal o una inversión segura. Con más de 10 años de experiencia en el sector inmobiliario, nos hemos consolidado como una empresa confiable y líder en el mercado.</p>
+            
+            <p>Nuestro compromiso es ofrecer un servicio personalizado, adaptado a las necesidades de cada cliente. Ya sea que busques comprar, vender o alquilar una propiedad, nuestro equipo de expertos te guiará en cada paso del proceso, garantizando transparencia, seguridad y asesoramiento profesional.</p>
+            
+            <p>Trabajamos con una amplia cartera de propiedades que incluye modernos apartamentos en el centro de la ciudad, acogedoras casas familiares, locales comerciales estratégicamente ubicados y terrenos para nuevos proyectos. Además, contamos con alianzas con las principales entidades financieras para facilitar opciones de financiamiento a nuestros clientes.</p>
+            
+            <p>En <strong>Horizon Bienes raíces y Gestión</strong>, creemos que un hogar es más que solo un espacio; es donde se crean recuerdos, se construyen historias y se proyecta el futuro. Por eso, nos dedicamos a ayudarte a encontrar el lugar perfecto para ti y tu familia.</p>
+            <h3>Nuestra Filosofía</h3>
+            <p>En Horizon Bienes raíces y Gestión, nos esforzamos por brindar un servicio excepcional basado en la confianza, la integridad y la excelencia. Nuestro objetivo es superar las expectativas de nuestros clientes en cada interacción.</p>
+            <p>Te invitamos a conocernos y descubrir por qué somos la mejor opción en bienes raíces. <br><strong>¡Tu próximo hogar te está esperando!</strong></p>
+        </section>
+          
+          
+        <section id="servicios">
+          <h2>Nuestros Servicios</h2>
+          <ul>
+              <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                  </svg>
+                  Compra y venta de propiedades
+              </li>
+              <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                      <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+                  </svg>
+                  Asesoramiento financiero e hipotecario
+              </li>
+              <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                      <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                  </svg>
+                  Administración de alquileres
+              </li>
+              <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  Tasación y valoración de inmuebles
+              </li>
+          </ul>
+      </section>
+          
+        <section id="destacados">
+            <h2>Propiedades Destacadas</h2>
+            <p>Explora nuestra selección exclusiva de propiedades en venta y alquiler. Desde elegantes apartamentos en el corazón de la ciudad hasta tranquilas residencias en la costa, tenemos opciones para todos los estilos de vida y presupuestos.</p>
+            <div class="container-destacadas">
+                <div class="propiedad">
+                <h3>Apartamento de lujo en el centro</h3>
+                <img src="./assets/images/propiedades-destacadas1.jpg" alt="Apartamento de lujo en el centro" width="6067" height="3467">
+                <p>Exclusivo ático con vistas panorámicas de la ciudad. Cuenta con 3 habitaciones, terraza privada de 50m², acabados de lujo en mármol y madera noble, cocina de diseño italiano y sistema de domótica integrado. El edificio ofrece gimnasio, piscina y servicio de conserjería 24/7.</p>
+                <p class="precio">€250,000</p>
+                <a href="./views/galeria.html">Ver galería</a>
+                </div>
+            
+                <div class="propiedad">
+                <h3>Casa en la naturaleza</h3>
+                <img src="./assets/images/propiedades-destacadas2.jpg" alt="Casa en el bosque" width="7077" height="3966">
+                <p>Espectacular villa sostenible rodeada de naturaleza. 400m² de pura serenidad con 5 dormitorios, ventanales del suelo al techo, piscina infinity con vistas al bosque, paneles solares y sistema de recolección de agua de lluvia. El refugio perfecto para los amantes de la vida eco-friendly.</p>
+                <p class="precio">€500,000</p>
+                <a href="./views/galeria.html">Ver galería</a>
+                </div>
+            
+                <div class="propiedad">
+                <h3>Zona residencial</h3>
+                <img src="./assets/images/propiedades-destacadas3.jpg" alt="Zona residencial" width="2000" height="1333">
+                <p>Moderno townhouse en exclusiva zona residencial. Diseño contemporáneo con 200m² distribuidos en 3 plantas, 4 habitaciones, sala de estar con doble altura, cocina americana y jardín privado. Ubicado en una comunidad cerrada con áreas verdes, piscina comunitaria y seguridad 24 horas.</p>
+                <p class="precio">€300,000</p>
+                <a href="./views/galeria.html">Ver galería</a>
+                </div>
+            </div>                  
+            <p>¿Buscas algo diferente? Contamos con una amplia cartera de propiedades en distintas ubicaciones. <br> <strong><a href="./views/presupuesto.html">Solicite su presupuesto</a> y encontraremos la opción ideal para ti.</strong></p>
+        </section>
+          
+        <section id="noticias">
+            <h2>Noticias del Sector Inmobiliario</h2>
+            <p>Mantente informado sobre las últimas tendencias del mercado inmobiliario, cambios en tasas de interés y oportunidades de inversión:</p>
+            <div id="textoNoticias"></div>
+            <hr>
+            <p>Consulte más noticias haciendo click <a href="https://www.eleconomista.es/ecourban/"><strong>aquí.</strong></a></p>
+        </section>
+          
+    </main>
+    <!--fin del main-->
+    <!--inicio del pie de pagina-->
+    <footer>
+        <div class="footer">
+          <div class="info-footer">
+            Ciudad Lineal, Madrid, España  &emsp;·&emsp;  © 2025 Horizon Bienes Raíces y Gestión, Inc.  &emsp;·&emsp; Política de Privacidad.
+        </div>        
+          <ul>
+            <li class="redes"><a href="http://www.x.com"><svg xmlns="http://www.w3.org/2000/svg" class="redes" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg></a></li>
+            <li class="redes"><a href="http://www.instagram.com"><svg xmlns="http://www.w3.org/2000/svg" class="redes" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg></a></li>
+            <li class="redes"><a href="http://www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" class="redes" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg></a></li>
+          </ul>
+          
+        </div>     
+      </footer>
+    <!--fin del pie de pagina-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/script-noticias.js"></script>
+</body>
+
+</html>

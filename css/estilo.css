@@ -1,0 +1,821 @@
+/*se importa una fuente externa de GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Mono:wght@900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Mono:wght@900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*edicion del html*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/*fin de la edicion del html*/
+
+/* edición del header */
+header{
+    position: fixed;
+    background-color: #F9F6F0;
+    width: 100%;
+    height: 125px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.388);
+    padding: 0 45px;
+    z-index: 1;
+}
+.logo{
+    width: 500px;
+    height: 125px;
+}
+
+/* edición de main */
+main{
+    padding-top: 125px;
+}
+
+/* edición de body */
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+/*edicion del menu*/
+nav{
+    align-items: center;
+    padding: 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+nav ul li{
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 25px;
+}
+/*eliminamos el estilo de la lista-index*/
+li{
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    background-color: rgba(245, 245, 245, 0.587);
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+}
+/*se resalta con este atributo donde está navegando el usuario en la pawina web*/
+nav ul li a:hover {
+    background-color: rgb(164, 164, 164);
+}
+nav ul li a:active{
+    background-color: #000000;
+    color: white;
+    transition: all 0.6s ease;
+}
+.activo {
+    background-color: #6F5B3E;
+    color: whitesmoke;
+    font-weight: 700;
+    border-radius: 15px;
+
+}
+/*fin de la edicion del menu*/
+
+/* edición del main index */
+#quienes-somos,
+#servicios,
+#destacados,
+#noticias {
+    line-height: 1.2;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f6f6;
+    border-radius: 30px;
+    text-align: justify;
+    line-height: 1.5;
+}
+#quienes-somos, #servicios {
+    text-align: center;
+}
+/*modificamos la sección de noticias añadiendo estilos*/
+#noticias {
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f6f6;
+}
+.noticia-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.noticia-card:hover {
+    transform: translateY(-5px);
+}
+.noticia-titulo {
+    text-align: center;
+    color: #6F5B3E;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.noticia-fecha {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.noticia-descripcion {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+}
+.containerNoticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+hr {
+    margin: 15px auto;
+    width: 50%;
+}
+.icono-noticias{
+    width: 16px;
+    height: 16px;
+}
+/*modificamos la sección de servicios*/
+#servicios ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+#servicios ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+}
+#servicios ul li svg {
+    margin-bottom: 15px;
+    fill: #6F5B3E;
+    width: 50px;
+    height: 50px;
+}
+#servicios ul li:hover svg {
+    fill: #333;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* modificamos la sección de destacados */
+#destacados {
+    padding: 30px;
+    text-align: center;
+}
+
+#destacados h2, 
+#destacados p {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.container-destacadas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+
+}
+.propiedad {
+    padding: 25px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.propiedad img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.propiedad h3 {
+    margin: 15px 0;
+    color: #333;
+}
+.propiedad .precio {
+    text-align: center;
+    color: #6F5B3E;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.propiedad p {
+    line-height: 1.5;
+    margin: 0;
+    text-align: justify;
+}
+.propiedad a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.propiedad:hover {
+    transform: translateY(-10px);
+}
+a {
+   color: inherit;
+   padding: 2px 4px;
+}
+
+/*fin de la edición del main index*/
+
+/* edición del footer */
+.footer{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.388);
+    background-color: #F9F6F0;
+    padding: 15px;
+    
+}
+.info-footer {
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    bottom: 0;
+    margin: 20px 0;
+}
+.redes{
+    display: inline;
+    margin-top: 10px;
+    width: 30px;
+}
+/* fin de la edición del footer */
+
+/* edicion de la main galería */
+.container{
+	position: relative;
+    margin: 50px auto;
+    width: 90%;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+} 
+.img1{
+    background-image: url('../assets/images/ecoparque.jpg');
+}
+.img2{
+    background-image: url('../assets/images/ecoparque2.jpg');
+}
+.img3{
+    background-image: url('../assets/images/ecoparque3.jpg');
+}
+.img4{
+    background-image: url('../assets/images/ecoparque4.jpg');
+}
+.img5{
+    background-image: url('../assets/images/ecoparque5.jpg');
+}
+.img6{
+    background-image: url('../assets/images/torre_vera.jpeg');
+}
+.img7{
+    background-image: url('../assets/images/torre_vera2.jpeg');
+}
+.img8{
+    background-image: url('../assets/images/torre_vera3.jpg');
+}
+.img9{
+    background-image: url('../assets/images/torre_vera4.jpg');
+}
+.img10{
+    background-image: url('../assets/images/torre_vera5.jpg');
+}
+.img11{
+    background-image: url('../assets/images/vista_verde.jpg');
+}
+.img12{
+    background-image: url('../assets/images/vista_verde2.jpg');
+}
+.img13{
+    background-image: url('../assets/images/vista_verde3.jpg');
+}
+.img14{
+    background-image: url('../assets/images/vista_verde4.jpg');
+}
+.img15{
+    background-image: url('../assets/images/vista_verde5.jpg');
+}
+.container .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #85858588;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3){
+    left: 76%;
+}
+.slide .item:nth-child(4){
+    left: calc(76% + 1375%);
+    opacity: 0;
+}
+.slide .item:nth-child(5){
+    left: calc(76% + 2750%);
+    opacity: 0;
+}
+
+/* aquí n= al numero de items*/
+.slide .item:nth-child(n + 6){
+    left: calc(76% + 4125%);
+    opacity: 0;
+}
+
+.item .contenido{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 30%;
+    text-align: left;
+    color: #000000;
+    transform: translate(0, 50px);
+    display: none;
+}
+
+.slide .item:nth-child(2) .contenido{
+    display: block;
+}
+
+.contenido .nombre{
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff79;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido .descripcion {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.2s 1 forwards;
+    padding: 10px;
+    background-color: #ffffff79;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0s 1 forwards;
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+
+}
+.flecha{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.flecha button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+    background: #000;
+    color: #fff;
+}
+
+/*fin de la edición del main galería*/
+
+/*inicio de la edición del main presupuesto*/
+#formulario {
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+}
+.formulario-titulo{
+    font-size: 35px;
+    font-weight: bold;
+    color: #433c32;
+    margin: 20px 0;
+}
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f6f0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+fieldset:hover {
+    transform: translateY(-5px);
+}
+legend {
+    font-size: 1.5em;
+    color: #6F5B3E;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.datos label, 
+.presupuesto label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    font-weight: 700;
+}
+#nombre, 
+#apellido,
+#telefono,
+#correo {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#nombre:focus, 
+#apellido:focus, 
+#telefono:focus, 
+#correo:focus{
+    border-color: #6F5B3E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(111, 91, 62, 0.2);
+}
+.presupuesto p {
+    color: #666;
+    font-style: italic;
+    margin: 10px 0;
+}
+.presupuesto .servicios-extras {
+    display: block;
+    margin: 15px 0 20px ;
+}
+#total {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+}
+.condiciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.enviar, .reset {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+.enviar {
+    background-color: #6F5B3E;
+    color: white;
+}
+.reset {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 2px solid #ddd;
+}
+.enviar:hover {
+    background-color: #5a4832;
+    transform: translateY(-2px);
+}
+.reset:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-2px);
+}
+.mensaje-alerta {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    min-width: 300px;
+    border-left: 5px solid #6F5B3E;
+    animation: fadeIn 0.2s ease-in;
+    transition: opacity 0.3s ease;
+}
+.mensaje-alerta.error {
+    border-left-color: #dc3545;
+    background-color: #fff5f5;
+}
+.mensaje-alerta.mostrar {
+    display: block;
+}
+.mensaje-alerta p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+.mensaje-alerta button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #6F5B3E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mensaje-alerta button:hover {
+    background-color: #5a4832;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+/*fin de la edición del main presupuesto*/
+
+/*inicio de la edición del main contacto*/
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 115px;
+}
+#map {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 550px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border: 8px solid white;
+    z-index: 0;
+}
+.info-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    margin: 600px auto 50px;
+    padding: 0 50px 0 50px;
+}
+.info {
+    display: block;
+    color: #fff;
+    background-color: #5a4832;
+    border: 1px solid #5a4832;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: 300;
+    font-size: 16px;
+    width: auto;
+    transition: all 0.3s ease;
+
+}
+.contacto-boton {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #5a4832;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+.info:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.contacto-boton:hover {
+    background-color: #333333;  
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/*fin de la edición del main contacto*/
+
+/*hacemos la pagina responsive */
+@media screen and (max-width: 1050px) {
+    /*MAIN*/
+    header {
+        flex-direction: column;        
+        height: auto;
+        padding: 5px;
+    }
+    main{
+        padding-top: 160px;
+        padding-bottom: 25px;
+    }
+    .logo {
+        justify-content: center;
+        width: 200px;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        padding: 5px;
+    }
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+    .footer{
+        display: inline;
+        text-align: center;
+    }
+    .info-footer {
+        display: flex;
+    }
+    .container-destacadas {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    
+    }
+    /*GALERIA*/
+    .item {
+        width: 100%;
+    }
+    .contenido, .descripcion {
+        width: 250px;
+        font-size: 16px;
+    }
+    .nombre {
+        width: 250px;
+        font-size: 10px;
+    }
+    /*PRESUPUESTO*/
+    #servicios ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #servicios ul li {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px 0;
+    } 
+    .propiedad {
+        flex: 0 1 calc(50% - 30px);
+    } 
+    
+    #formulario {
+        width: 80%;
+        transition: all 0.2s ease;
+        
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.2em;
+    }
+
+    .propiedad button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .contacto {
+        padding: 20px 10px;
+    }
+    /*CONTACTO*/
+    #map {
+        width: 90%;
+        height: 400px;
+        padding-top: 170px;
+        top: 170px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        border: 8px solid white;
+    }
+
+    .info-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 600px;
+    }
+
+    .info,
+    .contacto-boton  {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+
+}
+    

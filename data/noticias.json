@@ -1,0 +1,55 @@
+{
+    "noticias": [
+      {
+        "titulo": "Nuevo desarrollo de lujo en la ciudad",
+        "fecha": "2025-03-09",
+        "descripcion": "Se ha inaugurado un exclusivo complejo residencial con vistas panorámicas y tecnología domótica avanzada."
+      },
+      {
+        "titulo": "Tendencias en el mercado inmobiliario 2025",
+        "fecha": "2025-03-08",
+        "descripcion": "Expertos analizan el impacto de las nuevas políticas en la compra y venta de propiedades."
+      },
+      {
+        "titulo": "Descuentos especiales en viviendas sostenibles",
+        "fecha": "2025-03-07",
+        "descripcion": "Las casas ecológicas con paneles solares ahora tienen beneficios fiscales y precios reducidos."
+      },
+      {
+        "titulo": "Nuevo centro comercial cambiará el valor de propiedades cercanas",
+        "fecha": "2025-03-06",
+        "descripcion": "Un gran desarrollo comercial está en construcción y promete aumentar la plusvalía en barrios vecinos."
+      },
+      {
+        "titulo": "Inversores extranjeros apuestan por bienes raíces locales",
+        "fecha": "2025-03-05",
+        "descripcion": "Las inversiones extranjeras en bienes raíces han crecido un 30% en el último año."
+      },
+      {
+        "titulo": "Suben los precios de alquiler en zonas urbanas",
+        "fecha": "2025-03-04",
+        "descripcion": "El mercado de alquiler experimenta un alza significativa debido a la alta demanda."
+      },
+      {
+        "titulo": "Proyecto de viviendas sociales recibe aprobación gubernamental",
+        "fecha": "2025-03-03",
+        "descripcion": "El gobierno impulsa la construcción de viviendas accesibles con subsidios estatales."
+      },
+      {
+        "titulo": "Casas inteligentes: la nueva tendencia en bienes raíces",
+        "fecha": "2025-03-02",
+        "descripcion": "Las viviendas con automatización avanzada están en auge, mejorando la seguridad y comodidad del hogar."
+      },
+      {
+        "titulo": "¿Es buen momento para comprar una vivienda?",
+        "fecha": "2025-03-01",
+        "descripcion": "Analizamos los factores que afectan el mercado y cuándo es más conveniente invertir."
+      },
+      {
+        "titulo": "Nuevas hipotecas con tasas de interés reducidas",
+        "fecha": "2025-02-28",
+        "descripcion": "Los bancos han lanzado nuevos planes hipotecarios con mejores condiciones para compradores primerizos."
+      }
+    ]
+  }
+  
